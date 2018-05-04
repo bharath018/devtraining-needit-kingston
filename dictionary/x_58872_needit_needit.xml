@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element label="Mobile number" max_length="40" name="mobile_number" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="legal" label="Request type" max_length="40" name="u_choice_3" type="string">
+            <choice>
+                <element label="Human Resources" sequence="0" value="human resources"/>
+                <element label="Facilities" sequence="1" value="facilities"/>
+                <element label="Legal" sequence="2" value="legal"/>
+                <element label="Your Department Choice" sequence="3" value="your department choice"/>
+            </choice>
+        </element>
+        <element label="When needed" max_length="40" name="u_glide_date_time_1" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="New Journal" max_length="4000" name="u_journal_1" type="journal"/>
+        <element label="Requested for" max_length="32" name="u_reference_2" reference="cmdb_ci_appl_dot_net" type="reference"/>
+    </element>
+</database>
